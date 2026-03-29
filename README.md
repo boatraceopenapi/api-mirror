@@ -32,7 +32,7 @@ https://boatraceopenapi.github.io/hub/v3/YYYY/YYYYMMDD.json
 
 ## 🧩 サンプル
 
-### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Programs-v3-blue)](https://github.com/BoatraceOpenAPI/hub/tree/gh-pages/docs/v3)
+### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Hub-v3-blue)](https://github.com/BoatraceOpenAPI/hub/tree/gh-pages/docs/v3)
 
 - 2026年03月30日の出走表
   - [https://boatraceopenapi.github.io/hub/v3/2026/20260330.json](https://boatraceopenapi.github.io/hub/v3/2026/20260330.json)
