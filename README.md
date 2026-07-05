@@ -1,52 +1,56 @@
-# 🚤 Boatrace Open API for Hub
+# 🚤 Boatrace Open API Mirror
 
-[![cron](https://github.com/BoatraceOpenAPI/hub/actions/workflows/cron.yml/badge.svg)](https://github.com/BoatraceOpenAPI/hub/actions/workflows/cron.yml)
-[![pages-build-deployment](https://github.com/BoatraceOpenAPI/hub/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BoatraceOpenAPI/hub/actions/workflows/pages/pages-build-deployment)
+[![v1](https://img.shields.io/badge/Boatrace_Open_API-v1-blue)](https://github.com/boatraceopenapi/api/tree/gh-pages/docs/v1)
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![deploy-pages](https://github.com/boatraceopenapi/api/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/deploy-pages.yml)
+[![test](https://github.com/boatraceopenapi/api/actions/workflows/test.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/test.yml)
+[![psalm](https://github.com/boatraceopenapi/api/actions/workflows/psalm.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/psalm.yml)
+[![audit](https://github.com/boatraceopenapi/api/actions/workflows/audit.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/audit.yml)
+[![sync](https://github.com/boatraceopenapi/api/actions/workflows/sync.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/sync.yml)
+[![sync-upcoming](https://github.com/boatraceopenapi/api/actions/workflows/sync-upcoming.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/sync-upcoming.yml)
+[![keepalive](https://github.com/boatraceopenapi/api/actions/workflows/keepalive.yml/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/keepalive.yml)
+[![dependabot-updates](https://github.com/boatraceopenapi/api/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/boatraceopenapi/api/actions/workflows/dependabot/dependabot-updates)
 
 ## ⚠️ 注意事項
 
-> ⚡ 本 API は**非公式**であり、BOATRACE 公式サイト・団体とは一切関係ありません。<br>
-> 🕒 データはリアルタイム更新ではなく、**約30分間隔で更新**されます。（ GitHub Actions のスケジュールは cron.yml を参照 ）<br>
-> 🔍 データの正確性・完全性を保証するものではありません。<br>
-> 🙇‍♂️ 利用は自己責任でお願いします。
+> **本 API を利用する前に、以下の内容をご確認ください。**
+>
+> - ⚡ **本 API は非公式です。**
+>   BOATRACE 公式サイトおよび関連団体とは一切関係ありません。
+>
+> - 🕒 **データはリアルタイムではありません。**
+>   GitHub Actions による約 3 分間隔の定期更新を行っています。リアルタイム配信ではないため、最新の情報が反映されるまで数分程度の遅れが生じる場合があります。
+>
+> - 📊 **データの正確性・完全性は保証していません。**
+>   収集・変換の都合により、欠損や誤りが含まれる可能性があります。
+>
+> - 🚫 **公式な情報が必要な場合は、必ず BOATRACE 公式サイトをご確認ください。**
+>
+> - 🙇‍♂️ **本 API の利用は自己責任でお願いします。**
 
 ## 📌 概要
 
-この API では、ボートレース（ 競艇 ）のデータをまとめて取得できます。<br>
+この API では、ボートレース（競艇）のデータを取得できます。<br>
 データは GitHub Pages 上で公開されており、JSON 形式で提供されます。
+
+- **対応レース場**: 全国 24 場すべてに対応しています。特定のレース場のみを取り出すエンドポイントはなく、1日分のデータに全場の情報が含まれます。
+- **取得可能なデータ**: 出走表・直前情報・結果
 
 ## 🌐 エンドポイント
 
-### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Hub-v3-blue)](https://github.com/BoatraceOpenAPI/hub/tree/gh-pages/docs/v3)
-
-> 📅 対応期間: 2026年03月30日以降
+> 📅 対応期間: 2026年01月01日以降
 
 ```bash
-https://boatraceopenapi.github.io/hub/v3/YYYY/YYYYMMDD.json
+https://boatraceopenapi.github.io/api-mirror/v1/YYYY/YYYYMMDD.json
 ```
 
 📅 YYYY → 年<br>
 📅 YYYYMMDD → 年月日<br>
 （ 日付は日本標準時 JST〔UTC+9〕基準 ）
 
-## 🧩 サンプル
-
-### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Hub-v3-blue)](https://github.com/BoatraceOpenAPI/hub/tree/gh-pages/docs/v3)
-
-- 2026年03月30日の出走表
-  - [https://boatraceopenapi.github.io/hub/v3/2026/20260330.json](https://boatraceopenapi.github.io/hub/v3/2026/20260330.json)
-- 本日の出走表（ JST〔UTC+9〕基準 ）
-  - [https://boatraceopenapi.github.io/hub/v3/today.json](https://boatraceopenapi.github.io/hub/v3/today.json)
-
-## 🔗 関連リポジトリ
-
-| 🏷️ 対象 | 📂 リポジトリ |
-|:--|:--|
-| 🐆 出走表 | [Boatrace Open API for Programs](https://github.com/BoatraceOpenAPI/programs) |
-| ⏱️ 直前情報 | [Boatrace Open API for Previews](https://github.com/BoatraceOpenAPI/previews) |
-| 🏆 結果 | [Boatrace Open API for Results](https://github.com/BoatraceOpenAPI/results) |
+> **データが存在しない日付**（対応期間外・未来日付など）を指定した場合、GitHub Pages の仕様により **HTTP 404** が返されます。
 
 ## 📄 ライセンス
 
-Boatrace Open API for Hub は [MITライセンス](LICENSE) の元で公開されています。
+Boatrace Open API Mirror は [MIT license](LICENSE) の元で公開されています。
