@@ -19,18 +19,20 @@
 
 ---
 
-## エンドポイント
+## 🌐 エンドポイント
 
 ```bash
 https://boatraceopenapi.github.io/api-mirror/v1/YYYY/YYYYMMDD.json
 ```
 
-📅 YYYY → 年<br>
-📅 YYYYMMDD → 年月日<br>
-（ 日付は日本標準時 JST〔UTC+9〕基準 ）
+- `YYYY` → 年
+- `YYYYMMDD` → 年月日
+- 日付は日本標準時（JST / UTC+9）基準
+
+> データが存在しない日付（対応期間外・未来日付など）を指定した場合、GitHub Pages の仕様により HTTP 404 が返されます。
 
 ---
 
-## ライセンス
+## 📄 ライセンス
 
 Boatrace Open API Mirror は [MIT license](LICENSE) の元で公開されています。
