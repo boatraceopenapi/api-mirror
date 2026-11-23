@@ -35,6 +35,6 @@ https://boatraceopenapi.github.io/api-mirror/v1/YYYY/YYYYMMDD.json
 
 ## 📄 ライセンス
 
-Boatrace Open API Mirror のソースコードは [MIT license](LICENSE) の元で公開されています。
+Boatrace Open API Mirror のソースコードは [MIT license](LICENSE) の下で公開されています。
 
 API で配信しているデータは BOAT RACE 公式サイトの公開情報を元にしており、MIT license の対象ではありません。データの権利は本プロジェクトにはないため、データの利用条件（商用利用を含む）についてお答えすることはできません。利用の可否は元データの権利者にご確認ください。
