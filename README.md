@@ -14,7 +14,7 @@
 
 **本 API を利用する前に、以下の内容をご確認ください。**
 
-- **このリポジトリは [boatraceopenapi/api](https://github.com/boatraceopenapi/api) の docs/ を毎日ミラーリングした GitHub Pages 配信用リポジトリです。ドキュメント・仕様・注意事項などは本家をご確認ください。**
+- **本リポジトリは [boatraceopenapi/api](https://github.com/boatraceopenapi/api) の docs/ を毎日ミラーリングした GitHub Pages 配信用リポジトリです。ドキュメント・仕様・注意事項などは本家をご確認ください。**
 - **本リポジトリの内容は 1 日 1 回の同期のため、本家 [boatraceopenapi/api](https://github.com/boatraceopenapi/api) と比べて反映が遅いです。リアルタイム性が必要な場合は本家のエンドポイントをご利用ください。**
 
 ---
@@ -37,4 +37,4 @@ https://boatraceopenapi.github.io/api-mirror/v1/YYYY/YYYYMMDD.json
 
 Boatrace Open API Mirror のソースコードは [MIT license](LICENSE) の下で公開されています。
 
-API で配信しているデータは BOAT RACE 公式サイトの公開情報を元にしており、MIT license の対象ではありません。データの権利は本プロジェクトにはないため、データの利用条件（商用利用を含む）についてお答えすることはできません。利用の可否は元データの権利者にご確認ください。
+API で配信しているデータは BOAT RACE 公式サイトの公開情報を基にしており、MIT license の対象ではありません。データの権利は本プロジェクトにはないため、データの利用条件（商用利用を含む）についてお答えすることはできません。利用の可否は元データの権利者にご確認ください。
